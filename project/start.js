@@ -21,6 +21,10 @@ app.get('/projects', function(request, response) {
   response.render('pages/projects');
 });
 
+app.get('/database', function(request, response) {
+  response.render('pages/datbase');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
