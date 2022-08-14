@@ -22,7 +22,11 @@ app.get('/projects', function(request, response) {
 });
 
 app.get('/database', function(request, response) {
-  response.render('pages/datbase');
+  response.render('pages/database');
+});
+
+app.get('/score-keeper/score-keeper', function(request, response) {
+  response.render('pages/score-keeper/score-keeper');
 });
 
 app.listen(app.get('port'), function() {
